@@ -37,10 +37,10 @@
 -(void)nextImage{
     NSLog(@"下一个图");
     NSString *str;
-    if (++_page == 20) {
+    if (++_page == 8) {
         _page=1;
     }
-    NSString *imageName =[NSString stringWithFormat:@"%ld",_page];
+    NSString *imageName =[NSString stringWithFormat:@"%ld",(long)_page];
     UIImage *image = [UIImage imageNamed:imageName];
     _imageView.image = image;
     double blurry = [MessureTheBlurry messureTheBlurryOfImageName:imageName];
@@ -54,7 +54,7 @@
         str = @"模糊";
     }
     _blurry.text = [NSString stringWithFormat:@"blurry:%f\n结果判定（以%d为阈值）：%@",blurry,Threshold,str];
-    NSLog(@"//////////////////////////////////////////////");
+    NSLog(@"_________________");
 
 }
 #pragma mark - getter

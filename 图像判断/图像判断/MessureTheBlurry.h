@@ -9,4 +9,6 @@
 #import <Foundation/Foundation.h>
 @interface MessureTheBlurry : NSObject
 +(double)messureTheBlurryOfImageName:(NSString *)imageName;
++(double)messureTheBlurryOfUIImage:(UIImage*)image;
+
 @end
