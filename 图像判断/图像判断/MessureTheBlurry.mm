@@ -39,7 +39,6 @@ using namespace cv;
     sd1 = tmp_sd1.at<double>(0, 0);       //标准差
     cout << "均值: " << m1 << " , 方差: " << sd1*sd1 << endl;
     return sd1*sd1;
-    
 }
 
 

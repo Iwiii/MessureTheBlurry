@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4028305F1FE6162300571948 /* OpencvSupport.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4028305E1FE6162300571948 /* OpencvSupport.mm */; };
+		402830621FE616BE00571948 /* OpencvSupport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 402830601FE616BE00571948 /* OpencvSupport.cpp */; };
 		40B8811D1CD303B200FCC7C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B8811C1CD303B200FCC7C4 /* main.m */; };
 		40B881201CD303B200FCC7C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B8811F1CD303B200FCC7C4 /* AppDelegate.m */; };
 		40B881231CD303B200FCC7C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B881221CD303B200FCC7C4 /* ViewController.m */; };
@@ -17,6 +19,10 @@
 
 /* Begin PBXFileReference section */
 		12FE13E70F3CF1B9BC50DD32 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4028305D1FE6162300571948 /* OpencvSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpencvSupport.h; sourceTree = "<group>"; };
+		4028305E1FE6162300571948 /* OpencvSupport.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpencvSupport.mm; sourceTree = "<group>"; };
+		402830601FE616BE00571948 /* OpencvSupport.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpencvSupport.cpp; sourceTree = "<group>"; };
+		402830611FE616BE00571948 /* OpencvSupport.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpencvSupport.hpp; sourceTree = "<group>"; };
 		40B881181CD303B200FCC7C4 /* 图像判断.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "图像判断.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B8811C1CD303B200FCC7C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40B8811E1CD303B200FCC7C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +95,10 @@
 			children = (
 				40B881331CD304D400FCC7C4 /* MessureTheBlurry.mm */,
 				40B881321CD304D400FCC7C4 /* MessureTheBlurry.h */,
+				4028305D1FE6162300571948 /* OpencvSupport.h */,
+				4028305E1FE6162300571948 /* OpencvSupport.mm */,
+				402830601FE616BE00571948 /* OpencvSupport.cpp */,
+				402830611FE616BE00571948 /* OpencvSupport.hpp */,
 			);
 			name = MessureTheBlurry;
 			sourceTree = "<group>";
@@ -231,8 +241,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				40B881341CD304D400FCC7C4 /* MessureTheBlurry.mm in Sources */,
+				4028305F1FE6162300571948 /* OpencvSupport.mm in Sources */,
 				40B881231CD303B200FCC7C4 /* ViewController.m in Sources */,
 				40B881201CD303B200FCC7C4 /* AppDelegate.m in Sources */,
+				402830621FE616BE00571948 /* OpencvSupport.cpp in Sources */,
 				40B8811D1CD303B200FCC7C4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

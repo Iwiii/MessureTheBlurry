@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MessureTheBlurry.h"
+#import "OpencvSupport.h"
 #define Threshold 80
 @interface ViewController()
 @property (nonatomic)  UIImageView *imageView;
@@ -42,7 +43,7 @@
     }
     NSString *imageName =[NSString stringWithFormat:@"%ld",(long)_page];
     UIImage *image = [UIImage imageNamed:imageName];
-    _imageView.image = image;
+    _imageView.image = [OpencvSupport getEqualize:image];
     double blurry = [MessureTheBlurry messureTheBlurryOfImageName:imageName];
 
     if (blurry > Threshold) {
